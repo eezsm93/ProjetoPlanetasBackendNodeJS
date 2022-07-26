@@ -10,6 +10,12 @@ class PlanetRepository implements IPlanetRepository {
 
     return planet;
   }
+
+  async listAll(): Promise<{ Planets: Planet[] }> {
+    return {
+      Planets: await prisma.planet.findMany(),
+    };
+  }
 }
 
 export { PlanetRepository };
