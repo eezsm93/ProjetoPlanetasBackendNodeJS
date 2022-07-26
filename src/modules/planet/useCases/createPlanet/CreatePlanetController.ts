@@ -11,6 +11,7 @@ class CreatePlanetController {
       sunDistance,
       durationDay,
       gravity,
+      isActive,
     } = request.body;
 
     const planetRepository = new PlanetRepository();
@@ -23,6 +24,7 @@ class CreatePlanetController {
       sunDistance,
       durationDay,
       gravity,
+      isActive,
     });
 
     return response.status(201).json(planet);

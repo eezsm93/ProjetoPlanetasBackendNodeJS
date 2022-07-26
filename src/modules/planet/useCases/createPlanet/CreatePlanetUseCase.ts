@@ -8,6 +8,7 @@ interface ICreatePlanetDTO {
   sunDistance: number;
   durationDay: number;
   gravity: number;
+  isActive: boolean;
 }
 
 class CreatePlanetUseCase {
@@ -20,6 +21,7 @@ class CreatePlanetUseCase {
     sunDistance,
     durationDay,
     gravity,
+    isActive,
   }: ICreatePlanetDTO): Promise<Planet> {
     const planet = new Planet({
       name,
@@ -28,6 +30,7 @@ class CreatePlanetUseCase {
       sunDistance,
       durationDay,
       gravity,
+      isActive,
     });
 
     const planetPersisted = await this.planetRepository.create(planet);

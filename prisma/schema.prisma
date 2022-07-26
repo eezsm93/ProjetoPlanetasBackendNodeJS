@@ -19,6 +19,7 @@ model Planet {
   sunDistance Float
   durationDay Float
   gravity     Float
+  isActive    Boolean  @default(true)
   created_at  DateTime @default(now())
   updated_at  DateTime @updatedAt
 }

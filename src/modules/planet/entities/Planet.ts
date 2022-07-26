@@ -10,6 +10,7 @@ interface IPlanet {
   sunDistance: number;
   durationDay: number;
   gravity: number;
+  isActive: boolean;
 }
 
 class Planet {
@@ -20,6 +21,7 @@ class Planet {
   sunDistance: number;
   durationDay: number;
   gravity: number;
+  isActive: boolean;
 
   constructor(props: IPlanet) {
     if (!props.id) {
