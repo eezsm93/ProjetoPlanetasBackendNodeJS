@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658867629604" clover="3.2.0">
-  <project timestamp="1658867629604" name="All files">
+<coverage generated="1658868815353" clover="3.2.0">
+  <project timestamp="1658868815353" name="All files">
     <metrics statements="104" coveredstatements="102" conditionals="7" coveredconditionals="5" methods="3" coveredmethods="3" elements="114" coveredelements="110" complexity="0" loc="104" ncloc="104" packages="3" files="4" classes="4"/>
     <package name="modules.planet.entities">
       <metrics statements="74" coveredstatements="72" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
