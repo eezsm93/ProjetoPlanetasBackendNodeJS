@@ -10,3 +10,15 @@ datasource db {
   provider = "sqlserver"
   url      = env("DATABASE_URL")
 }
+
+model Planet {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  surfaceArea Float
+  sunDistance Float
+  durationDay Float
+  gravity     Float
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
