@@ -38,6 +38,10 @@ class PlanetRepository implements IPlanetRepository {
     });
   }
 
+  async findByAttribute(attr: string, value: any): Promise<Planet> {
+    return (await prisma.planet.findFirst({ where: { [attr]: value } })) as any;
+  }
+
   async deletePlanet(planet: Planet): Promise<void> {
     await prisma.planet.delete({
       where: {
