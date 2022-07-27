@@ -11,8 +11,19 @@ class PlanetRepositoryInMemory implements IPlanetRepository {
 
   async listAll(): Promise<{ Planets: Planet[] }> {
     return {
-      Planets: [...this.planets]}
+      Planets: [...this.planets],
     };
+  }
+
+  async findById(id: string): Promise<Planet> {
+    return { ...this.planets.find((planet) => planet.id === id) };
+  }
+
+  async updatePlanet(planetUpdateData: Planet): Promise<void> {
+    this.planets = this.planets.map((planet) => {
+      if (planet.id === planetUpdateData.id) planet = planetUpdateData;
+      return planet;
+    });
   }
 }
 
