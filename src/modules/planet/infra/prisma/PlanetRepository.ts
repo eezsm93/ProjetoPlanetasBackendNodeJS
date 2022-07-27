@@ -38,6 +38,14 @@ class PlanetRepository implements IPlanetRepository {
     });
   }
 
+  async deletePlanet(planet: Planet): Promise<void> {
+    await prisma.planet.delete({
+      where: {
+        id: planet.id,
+      },
+    });
+  }
+
   async activeOrDesactivePlanet(values: Planet): Promise<void> {
     await prisma.planet.update({
       where: {
