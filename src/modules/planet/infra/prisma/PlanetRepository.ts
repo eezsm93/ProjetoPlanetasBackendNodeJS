@@ -3,6 +3,14 @@ import { Planet } from "@modules/planet/entities/Planet";
 import { IPlanetRepository } from "@modules/planet/repository/IPlanetRepository";
 
 class PlanetRepository implements IPlanetRepository {
+  async findById(id: string): Promise<Planet> {
+    return await prisma.planet.findUnique({
+      where: {
+        id,
+      },
+    });
+  }
+
   async create(values: Planet): Promise<Planet> {
     const planet = prisma.planet.create({
       data: values,
@@ -15,6 +23,17 @@ class PlanetRepository implements IPlanetRepository {
     return {
       Planets: await prisma.planet.findMany(),
     };
+  }
+
+  async activeOrDesactivePlanet(values: Planet): Promise<void> {
+    await prisma.planet.update({
+      where: {
+        id: values.id,
+      },
+      data: {
+        isActive: !values.isActive,
+      },
+    });
   }
 }
 
