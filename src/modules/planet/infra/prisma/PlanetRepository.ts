@@ -25,6 +25,19 @@ class PlanetRepository implements IPlanetRepository {
     };
   }
 
+  async updatePlanet({ id, ...planet }: Planet): Promise<void> {
+    console.log(id);
+    console.log({ ...planet });
+    await prisma.planet.update({
+      where: {
+        id: id,
+      },
+      data: {
+        ...planet,
+      },
+    });
+  }
+
   async activeOrDesactivePlanet(values: Planet): Promise<void> {
     await prisma.planet.update({
       where: {
