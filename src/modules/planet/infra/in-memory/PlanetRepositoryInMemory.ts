@@ -25,6 +25,10 @@ class PlanetRepositoryInMemory implements IPlanetRepository {
       return planet;
     });
   }
+
+  async findByAttribute(attr: string, value: any): Promise<Planet> {
+    return { ...this.planets.find((planet) => planet.name === value) };
+  }
 }
 
 export { PlanetRepositoryInMemory };
