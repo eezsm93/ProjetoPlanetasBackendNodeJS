@@ -18,8 +18,7 @@ class UpdatePlanetUseCase {
   async execute(updatePlanetData: IUpdatePlanetDTO): Promise<void> {
     let planet = new Planet(updatePlanetData);
     let planetToBeEdited = await this.planetRepository.findById(planet.id);
-    console.log(planet);
-    console.log(planetToBeEdited);
+
     if (!planetToBeEdited)
       throw new Error("Nao foi possivel localizar este Planeta!");
 
