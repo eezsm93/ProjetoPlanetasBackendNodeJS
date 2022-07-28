@@ -23,6 +23,14 @@ class CreatePlanetUseCase {
     gravity,
     isActive,
   }: ICreatePlanetDTO): Promise<Planet> {
+    const planetNameAlredyExist = await this.planetRepository.findByAttribute(
+      "name",
+      name
+    );
+
+    if (planetNameAlredyExist?.id) {
+      throw new Error("Planeta com Esse nome ja existe!");
+    }
     const planet = new Planet({
       name,
       description,
