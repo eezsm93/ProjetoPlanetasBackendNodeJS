@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1659044114901" clover="3.2.0">
-  <project timestamp="1659044114902" name="All files">
-    <metrics statements="189" coveredstatements="167" conditionals="12" coveredconditionals="9" methods="11" coveredmethods="7" elements="212" coveredelements="183" complexity="0" loc="189" ncloc="189" packages="5" files="6" classes="6"/>
+<coverage generated="1659044250151" clover="3.2.0">
+  <project timestamp="1659044250152" name="All files">
+    <metrics statements="189" coveredstatements="178" conditionals="16" coveredconditionals="14" methods="11" coveredmethods="8" elements="216" coveredelements="200" complexity="0" loc="189" ncloc="189" packages="5" files="6" classes="6"/>
     <package name="modules.planet.entities">
-      <metrics statements="76" coveredstatements="76" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="76" coveredstatements="76" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="Planet.ts" path="C:\Users\dougl\Desktop\Treinamento_GX2\ProjetoPlanetasBackendNodeJS\src\modules\planet\entities\Planet.ts">
-        <metrics statements="36" coveredstatements="36" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="36" coveredstatements="36" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -32,13 +32,13 @@
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="1" type="stmt"/>
+        <line num="27" count="13" type="cond" truecount="1" falsecount="0"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="30" count="13" type="stmt"/>
+        <line num="31" count="13" type="stmt"/>
+        <line num="32" count="13" type="stmt"/>
+        <line num="33" count="13" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
@@ -183,45 +183,45 @@
       </file>
     </package>
     <package name="shared.errors">
-      <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="AppError.ts" path="C:\Users\dougl\Desktop\Treinamento_GX2\ProjetoPlanetasBackendNodeJS\src\shared\errors\AppError.ts">
-        <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
     </package>
     <package name="shared.validation.validator">
-      <metrics statements="20" coveredstatements="12" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="20" coveredstatements="20" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="index.ts" path="C:\Users\dougl\Desktop\Treinamento_GX2\ProjetoPlanetasBackendNodeJS\src\shared\validation\validator\index.ts">
-        <metrics statements="20" coveredstatements="12" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="20" coveredstatements="20" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="cond" truecount="0" falsecount="2"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="4" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="13" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="14" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
       </file>
     </package>
   </project>

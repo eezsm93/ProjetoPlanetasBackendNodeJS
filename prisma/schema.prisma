@@ -11,6 +11,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id         String   @id @default(uuid())
+  name       String
+  email      String   @unique
+  password   String
+  type       String
+  isActive   Boolean
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
 model Planet {
   id          String   @id @default(uuid())
   name        String
