@@ -7,7 +7,7 @@ import {
   IsString,
 } from "class-validator";
 
-class PlanetRules {
+class UserRules {
   @IsNotEmpty()
   @IsString()
   id: string;
@@ -18,27 +18,19 @@ class PlanetRules {
 
   @IsNotEmpty()
   @IsString()
-  description: string;
+  email: string;
+
+  @IsNotEmpty()
+  @IsString()
+  password: string;
 
   @IsNotEmpty()
   @IsNumber()
-  surfaceArea: number;
-
-  @IsNotEmpty()
-  @IsNumber()
-  sunDistance: number;
-
-  @IsNotEmpty()
-  @IsNumber()
-  durationDay: number;
-
-  @IsNotEmpty()
-  @IsNumber()
-  gravity: number;
+  type: number;
 
   @IsNotEmpty()
   @IsBoolean()
   isActive: boolean;
 }
 
-export { PlanetRules };
+export { UserRules };
